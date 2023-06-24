@@ -9,7 +9,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 16 1 * ?'
-
+# 解决方案
+permissions:
+  contents: write
 jobs:
   check:
     runs-on: ubuntu-latest
